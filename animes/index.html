@@ -1,0 +1,449 @@
+<html lang="en">
+<head>
+
+        <title>Animes - Ninjanimes</title>
+
+        <meta name="description" content="Watch animes in HD et FHD. Watch without bullshit in HD or FHD." />
+
+        <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Ninjanimes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#1888b2" />
+    <meta name="apple-mobile-web-app-title" content="Ninjanimes" />
+
+    		<meta property="og:title" content="Animes | Ninjanimes" />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Ninjanimes" />
+	<meta property="og:url" content="https://www.ninjanimes.net" />
+	<meta property="og:image" content="https://www.ninjanimes.net/images/fb-icon-larger.png" />
+	<meta property="og:description" content="Watch animes in HD et FHD. Watch without bullshit in HD or FHD." />
+	
+			<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Animes | Ninjanimes" />
+	<meta name="twitter:description" content="Watch animes in HD et FHD. Watch without bullshit in HD or FHD." />
+	<meta name="twitter:image" content="https://www.ninjanimes.net/images/fb-icon-larger.png" />
+	
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#474747">
+    <meta name="theme-color" content="#ffffff">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Roboto%20Condensed:400,700" rel="stylesheet">
+    <link href="https://www.ninjanimes.net/css/ninjanime-site.css?az4" rel="stylesheet">
+        
+        <script src="https://www.ninjanimes.net/js/ninjanime-libs.js?az4" type="text/javascript"></script>
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-dark bg-ninjanime-black navbar-expand">
+    <div class="container">
+        <div class="navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">
+                        <img src="https://www.ninjanimes.net/images/ninjanimes.svg" height="20" id="logo" />
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/animes">
+                        <svg viewBox="0 0 24 24" class="n"><path d="M3,17V19H9V17H3M3,5V7H13V5H3M13,21V19H21V17H13V15H11V21H13M7,9V11H3V13H7V15H9V9H7M21,13V11H11V13H21M15,9H17V7H21V5H17V3H15V9Z"></path></svg>
+                        <span class="d-none d-md-inline">Animes</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                                                        </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="main">
+    <div id="explore">
+
+    <br />
+    <div id="loading">
+        <div class="inner"></div>
+    </div>
+
+        <div id="search">
+        <input type="text" autocomplete="off" name="search" value="" placeholder="Search an anime" />
+    </div>
+
+        <div id="filters">
+        <div class="item">
+            <p class="title">Sort</p>
+            <div id="sort-dropdown" class="ui dropdown fluid button uppercase" tabindex="0">
+                <span class="text text-uppercase">Score <small>+ au -</small></span>
+                <i class="dropdown icon"></i>
+                <div class="menu uppercase" tabindex="-1">
+                    <div data-value="score_desc" class="item active selected text-uppercase">
+                        Score <small>+ au -</small>
+                    </div>
+                    <div data-value="score_asc" class="item text-uppercase">
+                        Score <small>- au +</small>
+                    </div>
+                    <div data-value="title_asc" class="item text-uppercase">
+                        Title <small>a-z</small>
+                    </div>
+                    <div data-value="title_desc" class="item text-uppercase">
+                        Title <small>z-a</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <p class="title">Type</p>
+            <div id="type-dropdown" data-filter="type" class="ui dropdown fluid button uppercase" tabindex="0">
+                <span class="text">ALL</span> <i class="dropdown icon"></i>
+                <div class="menu uppercase" tabindex="-1">
+                    <div data-value="null" class="item active selected">ALL</div>
+                                        <div data-value="movie" class="item">PAGE-FICHE-ANIME.MOVIE</div>
+                                        <div data-value="ona" class="item">PAGE-FICHE-ANIME.ONA</div>
+                                        <div data-value="ova" class="item">PAGE-FICHE-ANIME.OVA</div>
+                                        <div data-value="special" class="item">PAGE-FICHE-ANIME.SPECIAL</div>
+                                        <div data-value="tv" class="item">PAGE-FICHE-ANIME.TV</div>
+                                        <div data-value="tv_short" class="item">PAGE-FICHE-ANIME.TV_SHORT</div>
+                                    </div>
+            </div>
+        </div>
+        <div class="item">
+            <p class="title">Status</p>
+            <div id="status-dropdown" data-filter="status" class="ui dropdown fluid button uppercase" tabindex="0">
+                <span class="text text-uppercase">ALL</span> <i class="dropdown icon"></i>
+                <div class="menu uppercase" tabindex="-1">
+                    <div data-value="null" class="item active selected">ALL</div>
+                    <div data-value="2" class="item text-uppercase">Terminé</div>
+                    <div data-value="1" class="item text-uppercase">En cours</div>
+                    <div data-value="0" class="item text-uppercase">Pas encore commencé</div>
+                </div>
+            </div>
+        </div>
+        <div class="item genres">
+            <p class="title">Genres</p>
+            <div class="ui icon button">
+                <svg viewBox="0 0 24 24" style="height: 0.8em;"><path d="M3,2H21V2H21V4H20.92L14,10.92V22.91L10,18.91V10.91L3.09,4H3V2Z"></path></svg>
+            </div>
+        </div>
+        <div class="genres-pop-out" style="display: none;">
+                    </div>
+    </div>
+
+    <div class="ninjanime-animes d-none" id="ajax-list-animes" style="padding-bottom: 0">
+    </div>
+    <div class="ninjanime-animes" id="regular-list-animes" style="padding-bottom: 0">
+        <div class="anime"><div class="cover"><a href="/animes/info/34100-owarimonogatari"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/3bba69a182957d20ed02f89a5ad436ba.jpg" alt="Owarimonogatari" class="lazy" /></div></a><span class="score">
+                    4.20 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/34100-owarimonogatari" class="title"><div class="limit">Owarimonogatari</div></a><p class="year">2015 - 12 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/28950-bakemonogatari"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/713a6858eec9a67eeff4b55c6184656a.jpg" alt="Bakemonogatari" class="lazy" /></div></a><span class="score">
+                    4.15 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/28950-bakemonogatari" class="title"><div class="limit">Bakemonogatari</div></a><p class="year">2009 - 15 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/34186-re-zero-kara-hajimeru-isekai-seikatsu"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/4bd51b84dd6a0f7ec89401fedf627fec.jpg" alt="Re:ZERO -Starting Life in Another World-" class="lazy" /></div></a><span class="score">
+                    4.05 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/34186-re-zero-kara-hajimeru-isekai-seikatsu" class="title"><div class="limit">Re:ZERO -Starting Life in Another World-</div></a><p class="year">2016 - 25 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/35831-kimetsu-no-yaiba"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/fcccb4e7caa070417729cdb35bb71918.jpg" alt="Demon Slayer: Kimetsu no Yaiba" class="lazy" /></div></a><span class="score">
+                    4.05 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/35831-kimetsu-no-yaiba" class="title"><div class="limit">Demon Slayer: Kimetsu no Yaiba</div></a><p class="year">2019 - 26 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/32052-sakurasou-no-pet-na-kanojo"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/dde2cbd066f964bf63dcc323945aecae.jpg" alt="The Pet Girl of Sakurasou" class="lazy" /></div></a><span class="score">
+                    4.00 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/32052-sakurasou-no-pet-na-kanojo" class="title"><div class="limit">The Pet Girl of Sakurasou</div></a><p class="year">2012 - 24 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/31576-nisemonogatari"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/a87a1dd7a916d6d29a3eead260040e87.jpg" alt="Nisemonogatari" class="lazy" /></div></a><span class="score">
+                    4.00 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/31576-nisemonogatari" class="title"><div class="limit">Nisemonogatari</div></a><p class="year">2012 - 11 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/33772-tsukimonogatari"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/ec9933ff30188a72f8e5dcaf59124d45.jpg" alt="Tsukimonogatari" class="lazy" /></div></a><span class="score">
+                    4.00 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/33772-tsukimonogatari" class="title"><div class="limit">Tsukimonogatari</div></a><p class="year">2014 - 4 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/32322-nekomonogatari-kuro"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/77050e6fc4141c7d1457f36e3fc6f821.jpg" alt="Nekomonogatari Black" class="lazy" /></div></a><span class="score">
+                    3.90 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/32322-nekomonogatari-kuro" class="title"><div class="limit">Nekomonogatari Black</div></a><p class="year">2012 - 4 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/35675-carole-tuesday"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/3696cd0b907299b239100ea1d759d913.jpg" alt="Carole &amp; Tuesday" class="lazy" /></div></a><span class="score">
+                    3.85 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/35675-carole-tuesday" class="title"><div class="limit">Carole &amp; Tuesday</div></a><p class="year">2019 - 24 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/33663-kangoku-gakuen"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/57a9d589fa03ef4795f38f84306486c4.jpg" alt="Prison School" class="lazy" /></div></a><span class="score">
+                    3.80 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/33663-kangoku-gakuen" class="title"><div class="limit">Prison School</div></a><p class="year">2015 - 12 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/37276-fruits-basket-2019"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/f590ce1206a9b8dedfc30296dc8290cd.jpg" alt="Fruits Basket (2019)" class="lazy" /></div></a><span class="score">
+                    3.80 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/37276-fruits-basket-2019" class="title"><div class="limit">Fruits Basket (2019)</div></a><p class="year">2019 - 0 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/32189-chuunibyou-demo-koi-ga-shitai"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/3a1d84f752947c47e87f7cfdc42a63b0.jpg" alt="Love, Chunibyo &amp; Other Delusions" class="lazy" /></div></a><span class="score">
+                    3.80 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/32189-chuunibyou-demo-koi-ga-shitai" class="title"><div class="limit">Love, Chunibyo &amp; Other Delusions</div></a><p class="year">2012 - 12 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/33726-plastic-memories"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/f53a13851422263fb59329edb66f1dbc.jpg" alt="Plastic Memories" class="lazy" /></div></a><span class="score">
+                    3.80 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/33726-plastic-memories" class="title"><div class="limit">Plastic Memories</div></a><p class="year">2015 - 13 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/34350-koyomimonogatari"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/0832a7d7b55992260bda1b1c6b2fd924.jpg" alt="Koyomimonogatari" class="lazy" /></div></a><span class="score">
+                    3.75 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/34350-koyomimonogatari" class="title"><div class="limit">Koyomimonogatari</div></a><p class="year">2016 - 12 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/35669-sarazanmai"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/bffe281d013c3653eac4c8a7737375ff.jpg" alt="Sarazanmai" class="lazy" /></div></a><span class="score">
+                    3.75 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/35669-sarazanmai" class="title"><div class="limit">Sarazanmai</div></a><p class="year">2019 - 11 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/31638-shijou-saikyou-no-deshi-kenichi-ova"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/3ad980cc442688dcd2cb1052725e2683.jpg" alt="KenIchi: The Mightiest Disciple OVA" class="lazy" /></div></a><span class="score">
+                    3.75 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/31638-shijou-saikyou-no-deshi-kenichi-ova" class="title"><div class="limit">KenIchi: The Mightiest Disciple OVA</div></a><p class="year">2012 - 11 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/35756-aggressive-retsuko-ona"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/faeac0a1c44a6a3443dbde22e9f2f2c8.jpg" alt="Aggretsuko" class="lazy" /></div></a><span class="score">
+                    3.75 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/35756-aggressive-retsuko-ona" class="title"><div class="limit">Aggretsuko</div></a><p class="year">2018 - 10 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/33007-nisekoi"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/d978feca237e502810bbe54a398e1dac.jpg" alt="Nisekoi" class="lazy" /></div></a><span class="score">
+                    3.75 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/33007-nisekoi" class="title"><div class="limit">Nisekoi</div></a><p class="year">2014 - 20 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/37125-isekai-quartet"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/aa0952d4ab66756202e6a7dcd7616bda.jpg" alt="ISEKAI QUARTET" class="lazy" /></div></a><span class="score">
+                    3.70 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/37125-isekai-quartet" class="title"><div class="limit">ISEKAI QUARTET</div></a><p class="year">2019 - 12 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/32116-girls-und-panzer"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/c5677f71b1968b865a1570e182b7a18e.jpg" alt="Girls und Panzer" class="lazy" /></div></a><span class="score">
+                    3.70 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/32116-girls-und-panzer" class="title"><div class="limit">Girls und Panzer</div></a><p class="year">2012 - 12 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/35723-hitoribocchi-no-marumaru-seikatsu"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/15869308eb7795a355e6ef565a2c6d53.jpg" alt="Hitoribocchi no Marumaruseikatsu" class="lazy" /></div></a><span class="score">
+                    3.70 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/35723-hitoribocchi-no-marumaru-seikatsu" class="title"><div class="limit">Hitoribocchi no Marumaruseikatsu</div></a><p class="year">2019 - 12 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/33462-amagi-brilliant-park"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/00aab6ea789c017a4838bd42383f51f7.jpg" alt="Amagi Brilliant Park" class="lazy" /></div></a><span class="score">
+                    3.70 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/33462-amagi-brilliant-park" class="title"><div class="limit">Amagi Brilliant Park</div></a><p class="year">2014 - 13 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/33774-dungeon-ni-deai-wo-motomeru-no-wa-machigatteiru-darou-ka"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/4b06516e2c5d9c7432a55e9c0fb4cec6.jpg" alt="Is It Wrong to Try to Pick Up Girls in a Dungeon?" class="lazy" /></div></a><span class="score">
+                    3.70 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/33774-dungeon-ni-deai-wo-motomeru-no-wa-machigatteiru-darou-ka" class="title"><div class="limit">Is It Wrong to Try to Pick Up Girls in a Dungeon?</div></a><p class="year">2015 - 13 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/31377-kore-wa-zombie-desu-ka-of-the-dead"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/7c3e1a45e4127c0eb25d7a8b7250da5b.jpg" alt="Is this A Zombie? of the Dead" class="lazy" /></div></a><span class="score">
+                    3.65 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/31377-kore-wa-zombie-desu-ka-of-the-dead" class="title"><div class="limit">Is this A Zombie? of the Dead</div></a><p class="year">2012 - 10 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/33938-rakudai-kishi-no-eiyuutan"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/2bd19fb4009ffc10edd430e6191f8421.jpg" alt="Chivalry of a Failed Knight" class="lazy" /></div></a><span class="score">
+                    3.65 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/33938-rakudai-kishi-no-eiyuutan" class="title"><div class="limit">Chivalry of a Failed Knight</div></a><p class="year">2015 - 12 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/37309-sewayaki-kitsune-no-senko-san"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/5bc521054e37edce6cc6a86ec7be0abb.jpg" alt="The Helpful Fox Senko-san" class="lazy" /></div></a><span class="score">
+                    3.65 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/37309-sewayaki-kitsune-no-senko-san" class="title"><div class="limit">The Helpful Fox Senko-san</div></a><p class="year">2019 - 12 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/30540-kore-wa-zombie-desu-ka"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/5dd0565bef8f4fb788527a171d688538.jpg" alt="Is this a Zombie?" class="lazy" /></div></a><span class="score">
+                    3.60 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/30540-kore-wa-zombie-desu-ka" class="title"><div class="limit">Is this a Zombie?</div></a><p class="year">2011 - 12 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/34641-danganronpa-3-the-end-of-kibougamine-gakuen-zetsubou-hen"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/bc9e8957f418b0f2a0bb86f026534734.jpg" alt="Danganronpa 3: The End of Hope’s Peak High School - Despair Arc" class="lazy" /></div></a><span class="score">
+                    3.60 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/34641-danganronpa-3-the-end-of-kibougamine-gakuen-zetsubou-hen" class="title"><div class="limit">Danganronpa 3: The End of Hope’s Peak High School - Despair Arc</div></a><p class="year">2016 - 11 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/33656-yuuki-yuuna-wa-yuusha-de-aru"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/dc70227a7d9df5f27f0e78c82ad7099d.jpg" alt="YUKI YUNA IS A HERO" class="lazy" /></div></a><span class="score">
+                    3.60 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/33656-yuuki-yuuna-wa-yuusha-de-aru" class="title"><div class="limit">YUKI YUNA IS A HERO</div></a><p class="year">2014 - 12 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/33473-akame-ga-kill"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/b194c41cbdf4c2b779d2615875139971.jpg" alt="Akame ga Kill!" class="lazy" /></div></a><span class="score">
+                    3.60 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/33473-akame-ga-kill" class="title"><div class="limit">Akame ga Kill!</div></a><p class="year">2014 - 24 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/34339-danganronpa-3-the-end-of-kibougamine-gakuen-mirai-hen"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/562eec4ba9b07078010e6d03345f031f.jpg" alt="Danganronpa 3: The End of Hope’s Peak High School - Future Arc" class="lazy" /></div></a><span class="score">
+                    3.55 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/34339-danganronpa-3-the-end-of-kibougamine-gakuen-mirai-hen" class="title"><div class="limit">Danganronpa 3: The End of Hope’s Peak High School - Future Arc</div></a><p class="year">2016 - 12 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/33585-nisekoi-ova"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/2d676aeab38fa3680f4369dbbd4f3e52.jpg" alt="Nisekoi OVA" class="lazy" /></div></a><span class="score">
+                    3.55 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/33585-nisekoi-ova" class="title"><div class="limit">Nisekoi OVA</div></a><p class="year">2014 - 4 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/33096-outbreak-company"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/62c1507b8202cd94f44733de18ea736b.jpg" alt="Outbreak Company" class="lazy" /></div></a><span class="score">
+                    3.55 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/33096-outbreak-company" class="title"><div class="limit">Outbreak Company</div></a><p class="year">2013 - 12 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/31582-blood-lad"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/9d4e43921a44fdfe09818f19f75bc4e8.jpg" alt="Blood Lad" class="lazy" /></div></a><span class="score">
+                    3.55 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/31582-blood-lad" class="title"><div class="limit">Blood Lad</div></a><p class="year">2013 - 10 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/36461-kono-oto-tomare"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/6829f04c08f76d864d84dfad889698f2.jpg" alt="Kono Oto Tomare!: Sounds of Life" class="lazy" /></div></a><span class="score">
+                    3.55 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/36461-kono-oto-tomare" class="title"><div class="limit">Kono Oto Tomare!: Sounds of Life</div></a><p class="year">2019 - 13 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/31379-guilty-crown"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/02ff9da844ffbab5c01c0cd06386b958.jpg" alt="Guilty Crown" class="lazy" /></div></a><span class="score">
+                    3.55 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/31379-guilty-crown" class="title"><div class="limit">Guilty Crown</div></a><p class="year">2011 - 22 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/33700-fate-kaleid-liner-prisma-illya-2wei-herz"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/1a1d636c98f9e63b3cbb63f069ffe923.jpg" alt="Fate/kaleid liner Prisma Illya 2wei Herz!" class="lazy" /></div></a><span class="score">
+                    3.55 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/33700-fate-kaleid-liner-prisma-illya-2wei-herz" class="title"><div class="limit">Fate/kaleid liner Prisma Illya 2wei Herz!</div></a><p class="year">2015 - 10 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/33730-nisekoi-2"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/9d0fcc7311d2f9f58104bdfafc6b41eb.jpg" alt="Nisekoi:" class="lazy" /></div></a><span class="score">
+                    3.55 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/33730-nisekoi-2" class="title"><div class="limit">Nisekoi:</div></a><p class="year">2015 - 12 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/37326-senryuu-shoujo"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/1282361fd91dd7d33e973c529627e0a1.jpg" alt="Senryu Girl" class="lazy" /></div></a><span class="score">
+                    3.55 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/37326-senryuu-shoujo" class="title"><div class="limit">Senryu Girl</div></a><p class="year">2019 - 12 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/32261-hentai-ouji-to-warawanai-neko"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/4411d3abc8350e49b1cbc3b66c65a22e.jpg" alt="The &quot;Hentai&quot; Prince and the Stony Cat." class="lazy" /></div></a><span class="score">
+                    3.50 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/32261-hentai-ouji-to-warawanai-neko" class="title"><div class="limit">The &quot;Hentai&quot; Prince and the Stony Cat.</div></a><p class="year">2013 - 12 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/30657-motto-to-love-ru"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/b2e65e738c327d1a8c3c27092d00b6c1.jpg" alt="Motto To Love Ru" class="lazy" /></div></a><span class="score">
+                    3.50 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/30657-motto-to-love-ru" class="title"><div class="limit">Motto To Love Ru</div></a><p class="year">2010 - 12 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/36815-boku-tachi-wa-benkyou-ga-dekinai"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/99691ecb07f69c054e8d9cd599a0a999.jpg" alt="We Never Learn: BOKUBEN" class="lazy" /></div></a><span class="score">
+                    3.50 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/36815-boku-tachi-wa-benkyou-ga-dekinai" class="title"><div class="limit">We Never Learn: BOKUBEN</div></a><p class="year">2019 - 13 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/29260-to-love-ru-ova"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/772adb25675cbd86f93c5fe8eb6320e0.jpg" alt="To Love Ru OVA" class="lazy" /></div></a><span class="score">
+                    3.45 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/29260-to-love-ru-ova" class="title"><div class="limit">To Love Ru OVA</div></a><p class="year">2009 - 6 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/34652-super-lovers-2"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/bfe50086ca73fad392f894e58eb2bf4b.jpg" alt="Super Lovers 2" class="lazy" /></div></a><span class="score">
+                    3.45 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/34652-super-lovers-2" class="title"><div class="limit">Super Lovers 2</div></a><p class="year">2017 - 10 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/25181-lodoss-tou-senki"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/78cc593b765dd45436b48b6a2e7ac672.jpg" alt="Record of Lodoss War" class="lazy" /></div></a><span class="score">
+                    3.45 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/25181-lodoss-tou-senki" class="title"><div class="limit">Record of Lodoss War</div></a><p class="year">1990 - 13 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/34149-high-school-fleet"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/1f42e9148d92052e09e08f8874979d12.jpg" alt="High School Fleet" class="lazy" /></div></a><span class="score">
+                    3.45 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/34149-high-school-fleet" class="title"><div class="limit">High School Fleet</div></a><p class="year">2016 - 12 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/32497-danganronpa-kibou-no-gakuen-to-zetsubou-no-koukousei-the-animation"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/6e908d2f26ba44f68ca184d2696ec807.jpg" alt="Danganronpa: The Animation" class="lazy" /></div></a><span class="score">
+                    3.45 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/32497-danganronpa-kibou-no-gakuen-to-zetsubou-no-koukousei-the-animation" class="title"><div class="limit">Danganronpa: The Animation</div></a><p class="year">2013 - 13 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/33834-himouto-umaru-chan"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/b754a30717cd71d8944a731e26b113f0.jpg" alt="Himouto! Umaru-chan" class="lazy" /></div></a><span class="score">
+                    3.40 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/33834-himouto-umaru-chan" class="title"><div class="limit">Himouto! Umaru-chan</div></a><p class="year">2015 - 12 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/33370-witch-craft-works"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/291ed4a3e93cdca112eef1dd0ca26bed.jpg" alt="Witch Craft Works" class="lazy" /></div></a><span class="score">
+                    3.40 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/33370-witch-craft-works" class="title"><div class="limit">Witch Craft Works</div></a><p class="year">2014 - 12 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/33735-heavy-object"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/134308e425d55ef04bdba62b657ebb77.jpg" alt="Heavy Object" class="lazy" /></div></a><span class="score">
+                    3.40 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/33735-heavy-object" class="title"><div class="limit">Heavy Object</div></a><p class="year">2015 - 24 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/34509-watashi-ga-motete-dousunda"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/5f4f25d269af35abf542f09062624683.jpg" alt="Kiss Him, Not Me" class="lazy" /></div></a><span class="score">
+                    3.40 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/34509-watashi-ga-motete-dousunda" class="title"><div class="limit">Kiss Him, Not Me</div></a><p class="year">2016 - 12 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/31195-mashiroiro-symphony-the-color-of-lovers"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/16a153a27394122922a55fb102f602e3.jpg" alt="Mashiroiro Symphony" class="lazy" /></div></a><span class="score">
+                    3.40 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/31195-mashiroiro-symphony-the-color-of-lovers" class="title"><div class="limit">Mashiroiro Symphony</div></a><p class="year">2011 - 12 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/30219-gakuen-mokushiroku-highschool-of-the-dead"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/981d50d64a8d5a7d90aa7eb49927e1b9.jpg" alt="High School of the Dead" class="lazy" /></div></a><span class="score">
+                    3.35 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/30219-gakuen-mokushiroku-highschool-of-the-dead" class="title"><div class="limit">High School of the Dead</div></a><p class="year">2010 - 12 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/28466-sekirei"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/8e3460e10028fee7cad4702caf594d18.jpg" alt="Sekirei" class="lazy" /></div></a><span class="score">
+                    3.35 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/28466-sekirei" class="title"><div class="limit">Sekirei</div></a><p class="year">2008 - 12 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/37436-miru-tights"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/9be7eaf5887dcb7227031f81b6fb4005.jpg" alt="Miru Tights" class="lazy" /></div></a><span class="score">
+                    3.35 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/37436-miru-tights" class="title"><div class="limit">Miru Tights</div></a><p class="year">2019 - 12 Eps</p></div></div><div class="anime"><div class="cover"><a href="/animes/info/35410-kenja-no-mago"><div class="ninjanime-lazy-wrapper"><img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" /><img src="#" data-src="https://n50.ninjanimes.net/1/7d54b4aa7cf58b91cfdeb51b235739b2.jpg" alt="Wise Man’s Grandchild" class="lazy" /></div></a><span class="score">
+                    3.35 <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg></span></div><div class="info"><a href="/animes/info/35410-kenja-no-mago" class="title"><div class="limit">Wise Man’s Grandchild</div></a><p class="year">2019 - 12 Eps</p></div></div>
+    </div>
+        <div id="regular-pagination-wrapper">
+        <div class="ninjanime pagination">
+        <a href="javascript:;" class="disabled">
+        <svg viewBox="0 0 24 24"><path d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"></path></svg>
+    </a>
+
+                
+                                                        <a class="active" href="javascript:;">1</a>
+                                                                <a href="/animes/2">2</a>
+                                                                <a href="/animes/3">3</a>
+                                        
+        <a href="/animes/2"  class="">
+        <svg viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"></path></svg>
+    </a>
+</ul>
+
+    </div>
+    <div id="ajax-pagination-wrapper">
+    </div>
+</div>
+</div>
+
+<footer>
+    <div class="text-right" style="margin-top: .4em; margin-left: auto;">
+        <a href="https://twitter.com/ninjanimes" target="_blank" class="item">
+            <svg viewBox="0 0 24 24"><path d="M17.71,9.33C17.64,13.95 14.69,17.11 10.28,17.31C8.46,17.39 7.15,16.81 6,16.08C7.34,16.29 9,15.76 9.9,15C8.58,14.86 7.81,14.19 7.44,13.12C7.82,13.18 8.22,13.16 8.58,13.09C7.39,12.69 6.54,11.95 6.5,10.41C6.83,10.57 7.18,10.71 7.64,10.74C6.75,10.23 6.1,8.38 6.85,7.16C8.17,8.61 9.76,9.79 12.37,9.95C11.71,7.15 15.42,5.63 16.97,7.5C17.63,7.38 18.16,7.14 18.68,6.86C18.47,7.5 18.06,7.97 17.56,8.33C18.1,8.26 18.59,8.13 19,7.92C18.75,8.45 18.19,8.93 17.71,9.33M20,2H4A2,2 0 0,0 2,4V20A2,2 0 0,0 4,22H20A2,2 0 0,0 22,20V4C22,2.89 21.1,2 20,2Z"></path></svg>
+        </a>
+    </div>
+</footer>
+
+        <script type="text/javascript">
+var myLazyLoad = new LazyLoad();
+var urlsearch = "/animes-search.json?az4";
+var idx = null;
+var idxById = {};
+var idxLength = 0;
+var paginateElement = null;
+
+$.getJSON(urlsearch, function (data) {
+    $(data).each(function (id, row) {
+        idxById[row.id] = row;
+        idxLength++;
+    });
+
+    idx = lunr(function () {
+        var self = this;
+
+        self.pipeline.remove(lunr.stemmer)
+        self.pipeline.remove(lunr.stopWordFilter)
+
+        self.ref('id');
+        self.field('title', { boost: 2 });
+        self.field('title_english', { boost: 2 });
+        self.field('title_romanji', { boost: 2 });
+        self.field('others');
+        self.field('type');
+        self.field('status');
+
+        $(data).each(function (id, row) {
+            self.add(row, { boost: row.popularity });
+        });
+    });
+
+    paginateElement = $('<div class="pagination" id="ajax-paginate"></div>').pagination({
+        items: (idxLength % 56) + (idxLength % 56 <= 0 ? 0 : 1),
+        itemOnPage: 56,
+        currentPage: 1,
+        displayedPages: 8,
+        cssStyle: '',
+        prevText: '<svg viewBox="0 0 24 24"><path d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"></path></svg>',
+        nextText: '<svg viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"></path></svg>',
+        onInit: function () {
+            // fire first page loading
+        },
+        onPageClick: function (num, evt) {
+            var resultAnimes = Object.entries(idxById).slice(56 * (num - 1), 56 * num).map(function (elem) {
+                return elem[1];
+            });
+
+            $(".ninjanime-animes").loadTemplate($("#template"), resultAnimes);
+        }
+    });
+})
+
+$(document).ready(function () {
+
+    var updateListing = function (results) {
+        if (results.length > 0) {
+            $('#ajax-list-animes').removeClass('d-none');
+            $('#regular-list-animes').addClass('d-none');
+
+            $("#ajax-list-animes").loadTemplate($("#template"), results);
+
+            $('#regular-pagination-wrapper').addClass('d-none');
+            if ($('#ajax-pagination-wrapper').text() == '') {
+                $('#ajax-pagination-wrapper').append(paginateElement);
+            }
+        } else {
+            $('#ajax-list-animes').addClass('d-none');
+            $('#regular-list-animes').removeClass('d-none');
+
+            $('#regular-pagination-wrapper').removeClass('d-none');
+            $('#ajax-pagination-wrapper').addClass('d-none');
+        }
+    }
+
+    // Search override
+    var timerSearch;
+    $('[name=search]').on('input', function () {
+        var filters = {'search': $.trim($(this).val())};
+
+        if (filters['search'].length < 1) {
+            updateListing([]);
+            return;
+        }
+
+        if (filters['search'].split(' ').length <= 1) {
+            filters['search'] = $.trim(filters['search']) + '*';
+        } else {
+            var words = filters['search'].split(' ');
+            if (words[words.length - 1].length > 3) {
+                words[words.length - 1] = words[words.length - 1] + '*';
+            }
+            filters['search'] = $.trim(words.join(' '));
+        }
+
+        clearTimeout(timerSearch);
+
+        timerSearch = setTimeout(function () {
+            applyFilterAnime(filters);
+        }, 50);
+    });
+
+    // Genres Pop Out
+    $('.genres .button').click(function () {
+        if ($('.genres-pop-out').is(':visible')) {
+            $('.genres-pop-out').css('display', 'none');
+        } else {
+            $('.genres-pop-out').css('display', 'block');
+        }
+    })
+
+    $('.genres-pop-out .item').click(function () {
+        $(this).toggleClass('active');
+
+        var filters = getFilters(window.location.hash);
+        filters['genres'] = filters['genres'] || [];
+
+        if ($(this).hasClass('active')) {
+            filters['genres'].push($(this).attr('data-value'));
+        } else {
+            filters['genres'].pop($(this).attr('data-value'));
+        }
+
+        filters['genres'] = $.unique(filters['genres']);
+        applyFilterAnime(filters);
+    });
+
+    // Paginate
+    $(document).on('click', 'a[data-page]:not(.disabled)', function () {
+        var filters = getFilters(window.location.hash);
+        filters['page'] = $(this).attr('data-page');
+        applyFilterAnime(filters);
+        $(window).scrollTop(0);
+    });
+
+    // Dropdown filter
+    $('.ui.dropdown').dropdown({
+        onChange: function(value, text, $selectedItem) {
+            var filters = getFilters(window.location.hash);
+            if ($(this).attr('data-filter') != null) {
+                filters[$(this).attr('data-filter')] = value;
+            }
+            filters['page'] = '1';
+            applyFilterAnime(filters);
+        }
+    });
+
+    // Filtre depuis l'ancre
+    function applyFilterAnime(filter) {
+
+        var result = idx.query(function (q) {
+
+            lunr.tokenizer(filter['search']).forEach(function (token) {
+                q.term(token.toString(), {
+                    fields: [
+                        'title', 'title_english', 'title_romanji', 'others'
+                    ]
+                });
+            });
+
+            if (typeof filter['type'] !== 'undefined' && filter['type'] != '') {
+                q.term(filter['type'], {fields: ['type']});
+            }
+
+            if (typeof filter['status'] !== 'undefined' && filter['status'] != '') {
+                q.term(filter['status'], {fields: ['status']});
+            }
+        });
+        var resultAnimes = [];
+        var maxSafeResult = Math.min(result.length, 56);
+
+        for (var i = 0; i < maxSafeResult; i++) {
+            resultAnimes.push(idxById[result[i].ref]);
+        }
+
+        if (maxSafeResult <= 0) {
+            updateListing([]);
+        } else {
+            updateListing(resultAnimes);
+        }
+    }
+
+    function getFilters(hash) {
+        try {
+            hash = decodeURIComponent(hash.replace('#', ''));
+            hash = $.parseJSON(hash);
+            hash['search'] = hash['search'] || '';
+            return hash;
+        } catch (e) {
+            return {'search': ''};
+        }
+    }
+
+    if (window.location.hash.length > 2) {
+        applyFilterAnime(getFilters(window.location.hash));
+    }
+});
+</script>
+<script type="text/html" id="template">
+    <div class="anime">
+        <div class="cover">
+            <a data-href="url">
+                <div class="ninjanime-lazy-wrapper">
+                    <img src="https://www.ninjanimes.net/images/default_poster.jpg" class="placeholder" />
+                    <img data-src="url_image" data-alt="title" />
+                </div>
+            </a>
+            <span class="score">
+                <span data-content="score"></span> <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+            </span>
+        </div>
+        <div class="info">
+            <a data-href="url" class="title">
+                <div class="limit" data-content="title"></div>
+            </a>
+            <p class="year"><span data-content="start_date_year"></span> - <span data-content="nb_eps"></span></p>
+        </div>
+    </div>
+</script>
+</body>
+</html>
